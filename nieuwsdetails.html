@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="nl">
+
+<!------------ Begin Head ------------>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lowlands</title>
+    <meta name="description" content="Website Lowlands - Informatie Architectuur">
+    <link rel="stylesheet" href="./css/style.css">
+    <link href=' http://fonts.googleapis.com/css?family=Droid+Sans' rel='stylesheet' type='text/css'>
+</head>
+
+<!------------ Eind Head ------------>
+
+<body>
+
+    <!------------ Begin Header ------------>
+
+    <header>
+        <nav>
+            <ul>
+
+                <li><a href="">BLOKKENSCHEMA</a></li>
+                <li><a href="nieuws.html" class="current">NIEUWS</a></li>
+                <li><a href="">FAQ</a></li>
+                <li><a href="">PROGRAMMA</a></li>
+                <li><a href=""><img src="./images/logo.png" class="logo" alt="logo"> </a></li>
+                <li><a href="">TICKETS</a></li>
+                <li><a href="">PLATTEGROND</a></li>
+                <li><a href="">OVER LOWLANDS</a></li>
+                <li><a href="">ENGLISH</a></li>
+
+            </ul>
+        </nav>
+    </header>
+
+    <!------------ Eind Header ------------>
+
+    <img class="headerfoto" src="./images/banner.png" alt="achtergrond">
+
+    <main>
+
+        <!------------ Begin Filter Menu ------------>
+
+        <section id="ButtonContainer">
+            <button class="btn active" onclick="filterSelection('Alles')"> Alles</button>
+            <button class="btn" onclick="filterSelection('Nieuw')"> Nieuw</button>
+            <button class="btn" onclick="filterSelection('Oud')"> Oud</button>
+            <button class="btn" onclick="filterSelection('Artiest')"> Artiest</button>
+        </section>
+
+        <!------------ Einde Filter Menu ------------>
+
+        <!---------- Begin Nieuws Artikel --------->
+
+        <section>
+            <article>
+                <figure class="nieuwsartikel">
+                    <figcaption>
+                        <h1>21 Oktober 2019</h1>
+                        <h2>STUDIO MACK WINNAAR KICK THAT ASS-AWARD 2019</h2>
+                    </figcaption>
+                    <a href="nieuwsdetails.html"><img class="fotoartikel" src="./images/studiomack.png" alt="foto" /></a>
+                    <p>Studio Mack is de winnaar van de Kick That Ass-Award 2019. De award is een initiatief van ontwerper Maarten Baas en wordt ondersteund door Lowlands. De Kick That Ass-Award is een jaarlijkse prijs voor afstudeerwerk van studenten aan Design Academy Eindhoven, die in het het leven is geroepen omdat studenten in hun examenjaar aan een veelheid van eisen en verwachtingen moeten voldoen. De award is hierop een uitzondering, want hiervoor gelden simpelweg geen criteria: Er hoeft geen diepgravend onderzoek aan ten grondslag te liggen en geen oplossing voor een probleem gevonden te worden. Daarnaast hoeft het werk geen betere wereld te beloven en geen revolutionaire materialen te bevatten. Sterker nog: het werk hoeft niet eens een functie te hebben.<br><br>Studio Mack, bestaande uit het duo Puck van Iersel en Maarten de Bruijne, is met het werk 'Sea you there' de winnaar van dit jaar. Het winnende ontwerp is geen ontwerp, maar een film. Het pretendeert niks anders dan een uiterst humoristische en absurdistische film te zijn, als aanvulling op hun veelbelovende oeuvre dat op studiomack.nl te zien is. 'Sea you there' is een klein verhaal over twee bevlogen wetenschappers die een wetenschappelijk raadsel oplossen. De jury was unaniem lovend over de vervreemdende en authentieke film waarin de kijker gedurende 8 minuten wordt meegenomen in het mysterie.<br><br>Bekijk 'Sea You There' hier</p>
+
+                    <video controls>
+                        <source src="./SeaYouThere.mp4" type="video/mp4"></video>
+                </figure>
+            </article>
+        </section>
+
+        <!---------- Eind Nieuws Artikel --------->
+
+        <!---------- Begin Nieuws Artikelen --------->
+
+        <section class="nieuwsartikelen">
+            <article class="categorie Artiest">
+                <figure>
+                    <a href="nieuwsdetails.html"><img class="foto" src="./images/studiomack.png" alt="studio mack" /></a>
+                    <figcaption>
+                        <h1>21 September 2019</h1>
+                        <h2>STUDIO MACK WINNAAR KICK</h2>
+                    </figcaption>
+                </figure>
+            </article>
+
+            <article class="categorie Oud">
+                <figure>
+                    <img class="foto" src="./images/donderdag.png" alt="foto" />
+                    <figcaption>
+                        <h1>9 Juli 2019</h1>
+                        <h2>Donderdag</h2>
+                    </figcaption>
+                </figure>
+            </article>
+
+            <article class="categorie Nieuw">
+                <figure>
+                    <img class="foto" src="./images/kaartverkoop.png" alt="foto" />
+                    <figcaption>
+                        <h1>12 December 2019</h1>
+                        <h2>KAARTVERKOOP LL20 START 8 FEBRUARI</h2>
+                    </figcaption>
+                </figure>
+            </article>
+
+            <article class="categorie Artiest">
+                <figure>
+                    <img class="foto" src="./images/terugkijkpleizier.png" alt="foto" />
+                    <figcaption>
+                        <h1>27 Augustus</h1>
+                        <h2>TERUGKIJKPLEZIER</h2>
+                    </figcaption>
+                </figure>
+            </article>
+
+            <article class="categorie Oud">
+                <figure>
+                    <img class="foto" src="./images/wetenschapsprogramma.png" alt="foto" />
+                    <figcaption>
+                        <h1>20 Mei 2019</h1>
+                        <h2>HET WETENSCHAPSPROGRAMMA</h2>
+                    </figcaption>
+                </figure>
+            </article>
+
+            <article class="categorie Artiest">
+                <figure>
+                    <img class="foto" src="./images/llowcast.png" alt="foto" />
+                    <figcaption>
+                        <h1>26 Augustus</h1>
+                        <h2>LLOWCAST LIVE AT LOWLANDS 2019</h2>
+                    </figcaption>
+                </figure>
+            </article>
+
+            <article class="categorie Nieuw">
+                <figure>
+                    <img class="foto" src="./images/aankondigingen.png" alt="foto" />
+                    <figcaption>
+                        <h1>22 Augustus</h1>
+                        <h2>LOWLANDS 2020</h2>
+                    </figcaption>
+                </figure>
+            </article>
+
+            <article class="categorie Oud">
+                <figure>
+                    <img class="foto" src="./images/haciendaprogramma.png" alt="foto" />
+                    <figcaption>
+                        <h1>18 Juli 2019</h1>
+                        <h2>HACIENDAPROGRAMMA BEKEND!</h2>
+                    </figcaption>
+                </figure>
+            </article>
+
+            <article class="categorie Nieuw">
+                <figure>
+                    <img class="foto" src="./images/winnaars.png" alt="foto" />
+                    <figcaption>
+                        <h1>25 November</h1>
+                        <h2>WINNAARS POPCRYPTO</h2>
+                    </figcaption>
+                </figure>
+            </article>
+        </section>
+
+        <!---------- Einde Nieuws Artikelen --------->
+
+        <button class="laadmeernieuws">LAAD MEER NIEUWS</button>
+
+    </main>
+
+    <!---------- Begin Footer --------->
+
+    <footer>
+        <h3>LOWLANDS NIEUWSBRIEF?</h3>
+
+        <form>
+            <fieldset>
+                <label for="fname">Voornaam</label>
+                <input type="text" id="fname" name="firstname" required placeholder="Voornaam..">
+
+                <label for="lname">Achternaam</label>
+                <input type="text" id="lname" name="lastname" required placeholder="Achternaam..">
+
+                <label for="email">E-mail</label>
+                <input type="email" id="email" name="email" required placeholder="Email.." />
+
+                <label for="type">Type</label>
+                <select id="type" name="type">
+                    <option value="alles">Alles</option>
+                    <option value="nieuws">Nieuws</option>
+                    <option value="acties">Acties</option>
+                </select>
+
+                <label for="bericht">Bericht</label>
+                <textarea id="bericht" name="bericht" placeholder="Vragen en opmerkingen.."></textarea>
+
+                <input type="submit" value="verzend">
+            </fieldset>
+        </form>
+
+        <iframe src="https://maps.google.com/maps?width=100%&height=600&hl=nl&q=Unnamed%20Road%2C%208256%20RJ%20Biddinghuizen+(lowlands)&ie=UTF8&t=&z=15&iwloc=B&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+    </footer>
+
+    <!---------- Eind Footer --------->
+
+    <script src="lowlands.js"></script>
+
+</body></html>

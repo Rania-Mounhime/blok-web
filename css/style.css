@@ -1,0 +1,374 @@
+/* ------------------------------------------------------------------------------
+
+	Blok-Web
+    Klas: 210
+    Student naam: Rania EL Mounhime
+    Studenten nummer: 500806815
+    Docent: MW. L. BENVENUTI (Laura)
+    Website: Lowlands
+	
+	1. Body
+	2. Header
+    3. Filter Menu
+	4. Nieuws Artikelen
+	5. Laad Meer Nieuws Knop
+	6. Nieuws Artikel
+	7. Footer
+	
+			
+--------------------------------------------------------------------------------/*
+
+/*----------------------------------------------------
+	1. Body
+------------------------------------------------------*/
+
+
+body {
+    font-family: 'Droid Sans', serif;
+    font-size: 1em;
+    background-color: #0026cc;
+    margin: 0;
+}
+
+h1 {
+    color: white;
+    margin-top: -13em;
+    margin-left: 3.7em;
+}
+
+h2 {
+    margin-top: -0.5em;
+    margin-left: 3em;
+}
+
+h3 {
+    font-weight: bold;
+    font-size: 1.5em;
+    color: white;
+    margin-top: -4.5em;
+    margin-bottom: 3em;
+    margin-left: 4.4em;
+}
+
+/*----------------------------------------------------
+	2. Header
+------------------------------------------------------*/
+
+
+header {
+    height: 4.5em;
+}
+
+.logo {
+    margin-top: -0.625em;
+    width: 2.1875em;
+    height: 2.1875em;
+}
+
+nav ul {
+    padding: 1.25em 0em 0.3125em 0em;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    list-style: none;
+}
+
+
+nav li a {
+    color: white;
+    padding: 0.625em;
+    text-decoration: none;
+}
+
+nav li a:hover,
+nav li a.current {
+    color: #4cd066;
+    text-decoration: underline;
+    text-shadow: 2px 2px 4px #000000;
+
+}
+
+.headerfoto {
+    display: block;
+    width: 100%;
+}
+
+
+/*----------------------------------------------------
+	3. Filter Menu
+------------------------------------------------------*/
+
+#ButtonContainer {
+    background-color: #4cd066;
+    display: block;
+    padding-left: 3.8em;
+    width: 100%;
+}
+
+button {
+    color: white;
+    background-color: green;
+    padding: 1em 1em;
+    width: 6em;
+}
+
+/* Een blauwe achtergrond voor mouse-over */
+.btn:hover {
+    color: white;
+    background-color: blue;
+}
+
+/* Een blauwe achtergrond voor de actieve knop */
+.btn.active {
+    background-color: blue;
+    color: white;
+}
+
+/*----------------------------------------------------
+	4. Nieuws Artikelen
+------------------------------------------------------*/
+
+.nieuwsartikelen {
+    margin: 2.5em 1.5em 8.125em -2em;
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.categorie {
+    display: none;
+}
+
+.foto {
+    padding: 1.25em 1.875em 8.125em 1.875em;
+    background-color: #4cd066;
+    display: block;
+    width: 29.375em;
+    height: 15em;
+    margin-bottom: 10em;
+    margin-left: 2.1875em;
+    box-shadow: 0.8em 0.8em 0.5em black;
+    transition-duration: 0.3s;
+    transition-property: transform;
+}
+
+@media only screen and (max-width: 48em) {
+    .foto {
+        padding: 1.25em 1.875em 8.125em 1.875em;
+        background-color: #4cd066;
+        display: block;
+        width: 25em;
+        height: 15em;
+        margin-bottom: 10em;
+        margin-left: 3em;
+        box-shadow: 0.8em 0.8em 0.5em black;
+    }
+}
+
+.foto:hover,
+.foto.active,
+.foto-grow-rotate:hover,
+.foto-grow-rotate:focus,
+.foto-grow-rotate:active {
+    background-color: green;
+    transform: scale(1.1) rotate(4deg);
+}
+
+/* De class "show" wordt toegevoegd aan de gefilterde elementen */
+.show {
+    display: block;
+}
+
+
+/*----------------------------------------------------
+	5. Laad Meer Nieuws Knop
+------------------------------------------------------*/
+
+/*Bron:https://ianlunn.github.io/Hover*/
+
+.laadmeernieuws {
+    transform: perspective(1px) translateZ(0);
+    transition-duration: 0.3s;
+    transition-property: transform;
+    transition-timing-function: ease-out;
+    display: flex;
+    flex-wrap: wrap;
+    width: 30%;
+    text-decoration: none;
+    font-size: 1.125em;
+    padding: 1.25em 2.5em 1.25em 2.9em;
+    color: #0026cc;
+    background-color: white;
+    box-shadow: 0.8em 0.8em 0.5em black;
+}
+
+.laadmeernieuws:hover,
+.laadmeernieuws:focus,
+.laadmeernieuws:active {
+    color: white;
+    background-color: blue;
+    transform: translateY(8px);
+}
+
+
+/*----------------------------------------------------
+	6. Nieuws Artikel
+------------------------------------------------------*/
+
+
+.nieuwsartikel {
+    padding: 18em 3.125em 26.875em 3.125em;
+    background-color: #4cd066;
+    width: 50em;
+    height: 35em;
+    margin-top: 7.5em;
+    margin-bottom: 5em;
+    margin-left: 17em;
+}
+
+@media screen and (max-width: 48em) {
+    .nieuwsartikel {
+        padding: 18em 3.125em 26.875em 3.125em;
+        background-color: #4cd066;
+        width: 33em;
+        height: 40em;
+        margin-top: 7.5em;
+        margin-bottom: 5em;
+        margin-left: 4em;
+    }
+}
+
+.fotoartikel {
+    width: 50em;
+    height: 27.5em;
+    margin-top: 0em;
+    margin-bottom: 5em;
+}
+
+@media screen and (max-width: 48em) {
+    .fotoartikel {
+        width: 34em;
+        height: 20.5em;
+        margin-top: 0em;
+        margin-bottom: 5em;
+    }
+}
+
+video {
+    width: 34em;
+}
+
+p {
+    font-size: 1em;
+    text-align: left;
+    margin-top: -3.125em;
+}
+
+
+/*----------------------------------------------------
+	7. Footer
+------------------------------------------------------*/
+
+footer {
+    background-color: #0001cc;
+    height: 37em;
+    width: 90.1em;
+    padding-top: 10em;
+    margin-left: -0.5em;
+    margin-top: 9em;
+}
+
+
+form {
+    width: 36em;
+    margin: -3em 4em 3em 6.5em;
+    color: white;
+    background-color: #0026cc;
+}
+
+@media screen and (max-width: 48em) {
+    form {
+        width: 10em;
+        margin: -3em 4em 3em 1.5em;
+        color: white;
+        background-color: #0026cc;
+    }
+}
+
+
+input[type=text],
+input[type=email],
+select,
+textarea {
+    width: 50em;
+    padding: 1em;
+    box-sizing: border-box;
+    margin-top: 2px;
+    margin-bottom: 16px;
+}
+
+@media screen and (max-width: 48em) {
+
+    input[type=text],
+    input[type=email],
+    select,
+    textarea {
+        width: 40em;
+        padding: 1em;
+        box-sizing: border-box;
+        margin-top: 2px;
+        margin-bottom: 16px;
+    }
+}
+
+input:invalid {
+    background: hsla(0, 90%, 70%, 1);
+}
+
+input:valid {
+    background: hsla(100, 90%, 70%, 1);
+}
+
+textarea {
+    height: 18.5em;
+}
+
+input[type=submit] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+}
+
+input[type=submit]:hover {
+    background-color: green;
+
+}
+
+iframe {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -39.7em 4em 3em 46em;
+    width: 36em;
+    height: 36.5em;
+}
+
+
+@media screen and (max-width: 60em) {
+    iframe {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 5em 4em 3em 6.5em;
+        width: 36em;
+        height: 36.5em;
+    }
+}
+
+@media screen and (max-width: 48em) {
+    iframe {
+        display: flex;
+        flex-wrap: wrap;
+        width: 29.5em;
+        margin: 4em 4em 3em 1.6em;
+        height: 36.5em;
+    }
+}
